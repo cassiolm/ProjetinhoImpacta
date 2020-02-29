@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport usado para design responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- início div principal -->
+    <div>
+        <!-- início header -->
+        <header>
+            <h1>
+                <a href="../index.html"><img src="../imagens/logo-html5-mini.png" alt=""></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="quem-somos.html">Quem somos</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- fim header -->
+
+        <!-- início do main -->
+        <main>
+
+            <!-- Início Sec mapa -->
+            <section>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.148645254728!2d-46.65657118502223!3d-23.563104284681987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8ee7e7daf%3A0x8e773d484f8c408!2sAv.%20Paulista%2C%202073%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-300!5e0!3m2!1spt-BR!2sbr!4v1582980868765!5m2!1spt-BR!2sbr"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+            </section>
+            <!-- fim Sec mapa -->
+
+            <!-- início sec form -->
+            <section>
+                <form>
+                    <!-- fieldset circula os dados no form -->
+                    <fieldset>
+                        <legend>Formulário de Contato</legend>
+                        <!-- o for dentro do label conecta ao id -->
+                        <label for="nome">Nome</label> <br>
+                        <input type="text" autofocus id="nome" required placeholder="Digite seu nome" maxlength="20"
+                            name="nome" /> <br>
+                        <!-- autofocus ja seleciona o campo, id conecta ao lavbel, required é pq e requerido e placeholder escreve temporariamente no campo -->
+
+
+                        <label for="email">Email</label> <br>
+                        <input type="email" required id="email" name="email" placeholder="seuemail@exemplo.com.br"> <br>
+
+                        <label for="tel">Telefone</label> <br>
+                        <input type="tel" id="tel" placeholder="xx 99999-9999" name="tel"><br>
+
+                        <label for="msg">Mensagem</label> <br>
+                        <textarea name="msg" id="msg" required
+                            placeholder="Dúvidas, Reclamações ou ameaças. Digite aqui" cols="30" rows="10"
+                            name="msg"></textarea><br>
+
+                        <input type="submit" id="enviar" name="enviar" value="Enviar agora">
+                        <!-- <button>Botão Enviar</button> -->
+
+                    </fieldset>
+                </form>
+
+            </section>
+            <!-- fim sec form -->
+        </main>
+        <!-- fim do main -->
+        <section>
+            <h2>Vídeo Institucional</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Es8QSe48H3Y" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+
+        <!-- fim div principal -->
+
+        <!-- início do footer -->
+        <footer>
+
+            <p>Desenvolvido por <b>Cássio</b> 2020 &copy;</p>
+            <address>
+                av. paulista, 1009 <br> são paulo / sp <br> CEP: 03100-000
+            </address>
+        </footer>
+        <!-- fim do footer -->
+    </div>
+
+</body>
+
+</html>
