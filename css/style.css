@@ -1,4 +1,94 @@
-/* primeiro comentário em css */
-body {
-    background: #333
+    /* primeiro comentário em css */
+    
+    @charset "UTF-8";
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    *,
+    *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin: 0 auto;
+        width: 95%
+    }
+    
+    /* div{
+        width: 95%;
+        margin: 0 auto;
+    } */
+
+    /* Tornando as img responsivas/flexíveis */
+    img {
+        max-width: 100%;
+    }
+    
+    #img-logo{
+        width: 100px;
+    }
+    header{
+        position: relative;
+        background: #ccc
+        
+    }
+    
+    nav li {
+        display: inline;
+        margin: 0 0 0 20px;
+    }
+    
+    nav a {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+        font-size: 22px;
+        text-decoration: none
+    }
+    nav {
+        position: absolute;
+        top: 25px;
+        right: 100px;
+    }
+    /* nav a hover faz o foco no botão com mouse e o focus habilita para tab */
+    nav a:hover, nav a:focus{
+        background: #222;
+        color:#fff;
+        border-radius: 5px;
+    }
+    #tecnologias {
+    width: 100%;
+    margin: 15px auto;
 }
+    
+    #tecnologias article{   
+        margin: 15px 0;
+        padding: 1%;
+        box-shadow: grey 1px 1px 55px;
+        width: 29%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 1%;
+        height: 400px;
+    }    
+
+    #tecnologias h2, aside h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        margin: 0 0 10px 0;
+
+    }
+
+    #tecnologias img{
+        width: 100%;
+
+    }
+    
+    main{
+        margin: 100px auto;
+        width: 90%;
+
+    }
