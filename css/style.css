@@ -1,94 +1,438 @@
-    /* primeiro comentário em css */
-    
-    @charset "UTF-8";
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-    *,
-    *:before, *:after {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        margin: 0 auto;
-        width: 95%
-    }
-    
-    /* div{
+/* primeiro comentário em css */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html {
+    margin: 18px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 100%;
+    /* por padrão o width do elemento é 100%, se não houver declaração */
+}
+
+.clear {}
+
+
+/* div{
         width: 95%;
         margin: 0 auto;
     } */
 
-    /* Tornando as img responsivas/flexíveis */
-    img {
-        max-width: 100%;
-    }
-    
-    #img-logo{
-        width: 100px;
-    }
-    header{
-        position: relative;
-        background: #ccc
-        
-    }
-    
-    nav li {
-        display: inline;
-        margin: 0 0 0 20px;
-    }
-    
-    nav a {
-        text-transform: uppercase;
-        color: #000;
-        font-weight: bold;
-        font-size: 22px;
-        text-decoration: none
-    }
-    nav {
-        position: absolute;
-        top: 25px;
-        right: 100px;
-    }
-    /* nav a hover faz o foco no botão com mouse e o focus habilita para tab */
-    nav a:hover, nav a:focus{
-        background: #222;
-        color:#fff;
-        border-radius: 5px;
-    }
-    #tecnologias {
+
+/* Tornando as img responsivas/flexíveis */
+
+img {
+    max-width: 100%;
+}
+
+#img-logo {
+    width: 100px;
+}
+
+header {
+    position: relative;
+    background: #ccc;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+}
+
+
+/* nav a hover faz o foco no botão com mouse e o focus habilita para tab */
+
+nav a:hover,
+nav a:focus {
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#tecnologias {
     width: 100%;
     margin: 15px auto;
 }
-    
-    #tecnologias article{   
-        margin: 15px 0;
-        padding: 1%;
-        box-shadow: grey 1px 1px 55px;
-        width: 29%;
-        display: inline-block;
-        vertical-align: top;
-        margin: 0 1%;
-        height: 400px;
-    }    
 
-    #tecnologias h2, aside h2{
+#tecnologias article {
+    margin: 15px 0;
+    padding: 1%;
+    box-shadow: grey 1px 1px 55px;
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+    height: 400px;
+}
+
+#tecnologias h2,
+aside h2,
+#quem-somos h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+#tecnologias img {
+    width: 100%;
+}
+
+main {
+    margin: 100px auto;
+    width: 90%;
+}
+
+aside {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to top, #ccc, #fff);
+}
+
+aside img {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+aside article img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+aside section,
+aside article {
+    margin: 15px 0;
+    padding: 1%;
+    width: 30%;
+    display: inline-block;
+}
+
+aside h3 {
+    text-transform: uppercase;
+}
+
+table {
+    text-transform: uppercase;
+    border: solid 1px #222;
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+
+td {
+    border: solid 1px #222;
+    padding: 8px;
+    text-align: center;
+    width: 200px;
+}
+
+th {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* formatação das elementos ímpares com odd- e elemento pares com even */
+
+tr:nth-child(odd) {
+    background: #CCC;
+}
+
+tr:nth-child(even) {
+    background: lightblue;
+}
+
+
+/* seleciona o primeiro elemento */
+
+tr:first-child {
+    color: #fff;
+    background-color: #222;
+}
+
+
+/* seleciona o último elemento */
+
+tr:last-child {
+    background-color: khaki;
+    text-decoration: underline;
+}
+
+tr:nth-child(2) td:nth-child(4) {
+    background-color: green;
+}
+
+tr:nth-child(3) td:nth-child(4) {
+    background-color: red;
+}
+
+
+/* Preferencialmente usar flexbox em vez de float */
+
+.coluna-1 {
+    width: 50%;
+    float: right;
+}
+
+.coluna-2 {
+    width: 50%;
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+#video-institucional {
+    clear: both;
+    text-align: center;
+    /* margin: 620px auto 0 auto; */
+    width: 60%;
+    margin: 0 auto;
+}
+
+#main-contato {
+    /* width: 680; */
+}
+
+form {
+    margin-bottom: 100px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    border: #777 solid 1px;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    border: #004891 solid 1px;
+    background: #b9e3ff;
+}
+
+#enviar {
+    border: #004891 solid 1px;
+    background: #0191ed;
+    color: #fff;
+    width: 150px;
+    margin-top: 15px;
+}
+
+#enviar:hover {
+    border: #000 solid 1 px;
+    transform: scale(1.02);
+    box-shadow: 3px 3px 5px 5px #ccc;
+}
+
+input[type="text"] {
+    background: red;
+}
+
+input::placeholder {
+    color: blue;
+    opacity: 1;
+}
+
+
+/* -webkit-::placeholder, -webkit-:placeholder,  ::placeholder, ::-ms-input-placeholder, :-ms-input-placeholder  {
+    color: red;
+    opacity: 1; 
+  } */
+
+footer {
+    background: #ccc;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+address {
+    margin: 10px 0 5px 40px;
+}
+
+.teste-seletor>p {
+    color: red;
+}
+
+#mapa {
+    margin-top: 13px;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 98%;
+    }
+    nav {
+        font-size: 20px;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    #tecnologias article {
+        height: 460px;
+    }
+    #tecnologias article p {
+        font-size: .97em;
+    }
+    #tecnologias article h2 {
+        font-size: 1.4em;
+    }
+    aside section h3 {
+        font-size: 1.1em;
+    }
+    aside section img {
+        width: 50%
+    }
+    /* fim do breakpoint 900px */
+    .coluna-1,
+    .coluna-2 {
+        width: 46%;
+        margin: 0 2%;
+    }
+    .coluna-1 img,
+    .coluna-2 img {
+        height: 260px;
+    }
+    footer address {
         text-align: center;
-        text-transform: uppercase;
-        font-size: 30px;
-        margin: 0 0 10px 0;
-
+        font-size: .8em;
     }
-
-    #tecnologias img{
+    #mapa,
+    #form {
+        margin: 10px 0;
+        width: 50%;
+    }
+    section#form {
+        width: 50%;
+    }
+    section#form form {
         width: 100%;
-
     }
-    
-    main{
-        margin: 100px auto;
+    /* fim do breakpoint 900px */
+}
+
+
+/* breakpoint para tela max de 680 */
+
+@media screen and (max-width: 680px) {
+    nav {
+        top: 10px;
+        right: 25px;
+    }
+    nav li {
+        margin: 0 0 0 10px;
+    }
+    #img-logo {
+        width: 75px;
+    }
+    section#tecnologias {
+        margin: 0 auto;
+        text-align: center;
+    }
+    #tecnologias article {
+        margin: 0 auto;
+    }
+    #tecnologias p {
+        text-align: left;
+    }
+    #quem-somos article {
+        widows: 90%;
+        margin: 0 auto;
+    }
+    #quem-somos h2,
+    aside h2 {
+        font-size: 1em;
+    }
+    #mapa,
+    #form {
+        float: none;
+        width: 100%;
+    }
+    section#form form {
+        width: 200%;
+    }
+    #video-institucional {
+        width: 100%;
+    }
+    /* fim do breakpoint 680px */
+}
+
+@media screen and (max-width: 400px) {
+    nav a {
+        font-size: .5555em;
+    }
+    nav li {
+        margin: 0 0 0 2px;
+    }
+    #tecnologias article {
+        width: 100%;
+        height: 360px;
+    }
+    #tecnologias article p {
+        font-size: .9em;
+    }
+    #tecnologias img {
         width: 90%;
-
     }
+    aside section,
+    aside article {
+        width: 100%;
+    }
+    aside section img {
+        width: 30%;
+    }
+    table {
+        width: 90%
+    }
+    h3 {
+        text-align: center;
+    }
+    .coluna-1,
+    .coluna-2 {
+        float: none;
+        width: 95%;
+        margin: 0 auto;
+    }
+    /* fim do breakpoint 400px */
+}
