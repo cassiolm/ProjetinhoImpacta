@@ -8,23 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link href="../projeto/css/style.css" rel="stylesheet" />
-    <style>
-        a{ 
+    <!-- <style>
+         a{  
             /* este é um CSS inline */
             /* background-color: rgba(0, 255, 150, 1); */
             /* color: #ffffff; */
             /* font-size: 26px; */
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
     <!-- início div principal -->
-    <div>
+    <div class="clear">
         <!-- início header -->
         <header>
             <h1>
-                <a href="index.html"><img src="imagens/logo-html5-mini.png" alt=""></a>
+                <a href="index.html"><img id="img-logo" src="imagens/logo-html5.svg" alt=""></a>
             </h1>
             <nav>
                 <ul>
@@ -33,7 +33,7 @@
                     </li>
                     <li>
                         <!-- esse CSS local não é boa prática considerando SEO, porém é possível para destacar algo específico -->
-                        <!-- <a style="background:  salmon; font-size: 50px" href="paginas/quem-somos.html">Quem somos</a> -->                
+                        <!-- <a style="background:  salmon; font-size: 50px" href="paginas/quem-somos.html">Quem somos</a> -->
                         <a href="paginas/quem-somos.html">Quem somos</a>
                     </li>
                     <li>
@@ -46,10 +46,14 @@
             </nav>
         </header>
         <!-- fim header -->
-
+        <!-- Início IMG Destaque -->
+        <div>
+            <img id=img-destaque src="imagens/destaque-home.jpg" alt="">
+        </div>
+        <!-- FIM IMG Destaque -->
         <!-- início do main -->
         <main>
-            <section>
+            <section id="tecnologias">
                 <!-- article 1 -->
                 <article>
                     <h2>HTML 5</h2>
@@ -91,14 +95,18 @@
 
             <h2>Nossos serviços</h2>
             <section>
+                <img src="imagens/desenvolvimento.png" alt="ícone de desenvolvimento de sistemas">
                 <h3>Desenvolvimento</h3>
             </section>
             <section>
+                <img src="imagens/cloud-service.png" alt="imagem de serviço em nuvem">
                 <h3>Banco de Dados</h3>
             </section>
             <section>
-                <h3>Analytics</h3>
+                <img src="imagens/server.png" alt="ícone de servidor">
+                <h3>Servidores</h3>
             </section>
+
         </aside>
         <!--fim aside  -->
 
