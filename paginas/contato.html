@@ -16,7 +16,7 @@
         <!-- início header -->
         <header>
             <h1>
-                <a href="../index.html"><img src="../imagens/logo-html5-mini.png" alt=""></a>
+                <a href="../index.html"><img id="img-logo" src="../imagens/logo-html5.svg" alt=""></a>
             </h1>
             <nav>
                 <ul>
@@ -37,21 +37,27 @@
         </header>
         <!-- fim header -->
 
+        <!-- Início IMG Destaque -->
+        <div>
+            <img id=img-destaque src="../imagens/destaque-contato.jpg" alt="">
+        </div>
+        <!-- FIM IMG Destaque -->
+
         <!-- início do main -->
-        <main>
+        <main id="main-contato">
 
             <!-- Início Sec mapa -->
-            <section>
+            <section class="coluna-1" id="mapa">
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.148645254728!2d-46.65657118502223!3d-23.563104284681987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8ee7e7daf%3A0x8e773d484f8c408!2sAv.%20Paulista%2C%202073%20-%20Consola%C3%A7%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-300!5e0!3m2!1spt-BR!2sbr!4v1582980868765!5m2!1spt-BR!2sbr"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    width="100%" height="485" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
             </section>
             <!-- fim Sec mapa -->
 
             <!-- início sec form -->
-            <section>
+            <section id="form" class="coluna-2">
                 <form>
                     <!-- fieldset circula os dados no form -->
                     <fieldset>
@@ -84,7 +90,7 @@
             <!-- fim sec form -->
         </main>
         <!-- fim do main -->
-        <section>
+        <section id="video-institucional">
             <h2>Vídeo Institucional</h2>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/Es8QSe48H3Y" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
