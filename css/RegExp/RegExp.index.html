@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp</title>
+    <style>
+        body{
+            width: 70%;
+            margin: 50px auto;  
+
+        }
+    </style>
+</head>
+<body>
+    <h1>RegExp</h1>
+    <h2>Expressões Regulares</h2>
+    
+<script>
+    var RegExp = /\(11\) 1234-5678/
+    var tel = '(11) 1234-5678 escrever ao final'
+        
+    document.write(RegExp.exec(tel));
+    document.write(RegExp.test(tel));
+
+    var minhaPlaca = /[a-zA-z]{3}-[0-9]{4}/;
+    var moto = 'gaf-5698';
+
+    document.write('<br>');
+    document.write(minhaPlaca.exec(moto));
+    document.write(minhaPlaca.test(moto));
+
+    var nome = 'Thiago';
+    var nome = '1234';
+
+</script>
+
+</body>
+</html>

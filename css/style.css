@@ -192,6 +192,20 @@ tr:last-child {
     text-decoration: underline;
 }
 
+.fadeOut{
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.aprovado{
+    color: green;
+}
+
+.reprovado{
+    color:red;
+}
+/*
 tr:nth-child(2) td:nth-child(4) {
     background-color: green;
 }
@@ -199,7 +213,7 @@ tr:nth-child(2) td:nth-child(4) {
 tr:nth-child(3) td:nth-child(4) {
     background-color: red;
 }
-
+*/
 
 /* Preferencialmente usar flexbox em vez de float */
 
@@ -229,8 +243,17 @@ footer {
     /* width: 680; */
 }
 
+section h3{
+    text-align: center;
+}
+
 form {
     margin-bottom: 100px;
+}
+
+#form-adiciona{
+    width: 50%;
+    margin: 0 auto;
 }
 
 legend {
@@ -268,13 +291,17 @@ textarea:focus {
     box-shadow: 3px 3px 5px 5px #ccc;
 }
 
-input[type="text"] {
-    background: red;
+input[type="number"] {
+    background: lightcoral;
 }
+/* 
+input[type="number"] {
+    background: lightcoral;
+} */
 
 input::placeholder {
-    color: blue;
-    opacity: 1;
+    color: #222;
+    opacity: .8;
 }
 
 

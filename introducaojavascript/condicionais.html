@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IF / ELSE</title>
+
+    <!--  
+<script>
+var textoH1 = document.querySelector('h1');
+textoH1.textContent= 'Condicionais'
+declarar js antes do conteudo html que ainda nao existe ainda
+</script>
+-->
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <h1> Condicionais</h1>
+
+    <h2> Trabalhando com IF / ELSE</h2>
+
+    <br>
+
+    <script>
+
+        var vazio;
+        var nula = null;
+
+        console.log(vazio);
+        console.log(nula);
+        console.log(typeof(vazio));
+        console.log(typeof(nula));
+        
+        function proximaLinha() {
+            document.write("<br><hr>")
+        };
+
+        var idade = 18;
+        var cia = true;
+
+        if (idade >= 18) {
+            document.write("Sozinho, maior de idade, pode entrar.");
+        }
+        else if (idade >= 16 && cia == true) {
+            document.write("Menor e acompanhado, pode entrar");
+        }
+        else {
+            document.write("Menor e sozinho, vai pra casa");
+        }
+        proximaLinha()
+
+    </script>
+
+
+</body>
+
+</html>

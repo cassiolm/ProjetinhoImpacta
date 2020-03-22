@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom</title>
+</head>
+
+<body>
+    <h1 id='titulo-principal'>Introdução ao JS - DOM</h1>
+
+    <h2 class='titulo-secundario'>DOM - Document Object Model</h2>
+
+    <hr>
+
+    <p>Conhecendo o DOM - Para manipulação através da árvore de elementos html.</p>
+   <!-- cria um botão -->
+    <button id="print">Imprimir</button>
+    <script>
+        console.log(document);
+
+        var titulo = document.querySelector('h1');
+        var selecaoId = document.getElementById('titulo-principal');
+        var selecaoClass = document.getElementsByClassName('titulo-secundario');
+
+        titulo.textContent = 'Introdução ao javascript com DOM';
+
+
+        console.log(titulo);
+        console.log(titulo.textContent);
+
+        console.log(selecaoId.textContent);
+        console.log(selecaoClass[0].textContent);
+        // função vazia
+
+        document.write(titulo.textContent);
+
+        // contador = 0
+
+        function pulaLinha() {
+            // função sem parâmetro, mas com instrução
+            document.write('<br>');
+            // contador += 1;
+        };
+
+        // Função com parâmetro
+        function mostra(frase) {
+            document.write(frase);
+        }
+
+        // while(contador < 4){
+        // pulaLinha();
+        // document.write(titulo.textContent);
+        // }
+
+        pulaLinha();
+        mostra('HTML5');
+        pulaLinha();
+        mostra('CSS3');
+        document.write(titulo.textContent);
+
+var botaoImprimir = document.querySelector('#print');
+
+        botaoImprimir.onclick = function(){
+            print();
+        };
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objeto</title>
+</head>
+<body>
+        <h1>
+                Trabalhando com Objetos</h1>
+        <p>Objetos são coleções de dados não ordernados, constituídos por pares com uma chave e um valor</p>
+        
+    <hr>
+    <ul>
+        <li id="lista">        </li>
+    </ul>
+
+    <script>
+        var livro = {
+            "título":" HTML5 e CSS3",
+            'autor': 'Jon Duckett',
+            'assunto': 'tecnologia',
+            'página': '512'
+        };  
+
+        console.log(livro);
+
+var lilista = document.querySelector("#lista");
+
+lilista.textContent = livro.título;
+
+// Objetos implícitos Date
+    var hoje = new Date();
+    document.write('Data: '+hoje+ '<br>');
+    document.write('Hora: '+hoje.getHours()+'<br>');
+    document.write(''+hoje.getMinutes()+'');
+
+
+</script>
+        
+    
+    </body>
+</html>

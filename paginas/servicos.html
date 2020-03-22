@@ -44,8 +44,8 @@
         <!-- FIM IMG Destaque -->
 
         <section>
-            <h3>grade de cursos</h3>
-            <table>
+            <h3>Grade de cursos</h3>
+            <table id='tabela-aluno'>
                 <tr>
                     <th> Alunos</th>
                     <th>cursos</th>
@@ -58,15 +58,29 @@
                     <td>6</td>
                     <td>ativo</td>
                 </tr>
-
-
-                <tr>
-                    <td>Joana</td>
-                    <td>ADM</td>
-                    <td>8</td>
-                    <td>inativo</td>
+                <tr id='aluno'>
+                    <td id='info-nome'>Joana</td>
+                    <td id='info-curso'>ADM</td>
+                    <td id='info-nota'>8</td>
+                    <td id='info-status'>inativo</td>
                 </tr>
             </table>
+        <form id='form-adiciona'> 
+            <label for="nome">Nome</label>
+            <input type="text" id='nome' autofocus name='nome' required  placeholder="nome do aluno" />
+            <br>
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" required placeholder="Digite o curso"/>
+            <br>
+            <label for="nota">Nota</label>
+            <input type="number" id="nota" name='nota' required placeholder='Informe a nota'/>
+            <br>
+            <label for="status">Status</label>    
+            <input type="text" id='status' name='status' required placeholder="Informe o status do aluno"/>
+            <br>
+            <button id='adicionar-aluno' class='btn-adiciona'>  Adicionar Aluno</button>
+            <button>Buscar Aluno</button>
+        </form>
         </section>
 
         <section>
@@ -107,7 +121,7 @@
 
         <!-- fim da div principal -->
     </div>
-
+<script src="../js/main.js"></script>
 </body>
 
 </html>
