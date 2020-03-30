@@ -1,3 +1,4 @@
+
 //acessa o h3
 var titulo = document.querySelector('h3');
 // troca o titulo do h3 ˆ
@@ -46,7 +47,6 @@ botaoAdicionaAluno.addEventListener('click', function(){
     
     //add tr completo na tabela
     tabela.appendChild(alunoTr);
-
 
     if ( nota >= 6) {
         notaTd.classList.add('aprovado');

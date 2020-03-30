@@ -22,7 +22,7 @@ body {
     /* por padrão o width do elemento é 100%, se não houver declaração */
 }
 
-.clear {}
+/* .clear {} */
 
 
 /* div{
@@ -132,6 +132,7 @@ aside article img {
     width: 30%;
     margin-bottom: 10px;
 }
+
 
 aside section,
 aside article {
@@ -429,6 +430,79 @@ address {
     #video-institucional {
         width: 100%;
     }
+
+.mobile-btn{
+    display: block;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+    border-top: 4px solid;
+    margin: -60px 20px 0 0; /* o top deve ser -70px*/
+    float: right; /* deve ir (flutuar) para direita*/
+    position: relative;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+}
+.mobile-btn::after, .mobile-btn::before{
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background: currentColor;
+    position: relative;
+    transition: transform .2s ease;
+}
+
+.mobile-btn.active{
+border-top-color:transparent;
+
+}
+
+.mobile-btn.active::after{
+    margin-top: 0;
+    top: 2px;
+    transform:rotate(45deg);
+}
+
+.mobile-btn.active::before{
+    margin-top: 0;
+    top: 6px;
+    transform:rotate(135deg);
+}
+
+/* menu quando sofrer click*/
+
+.mobile-menu{
+    position: fixed;
+    background: #ccc;
+    padding: 10px;
+    top: 50px;
+    right:0;
+    opacity: 0;
+    visibility: hidden;
+    /* translate 3d funciona horizontal, vert, profundidade */
+    transform: translate3d(60px, 0px, 0px);
+    transition: .3s;
+}
+
+.mobile-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.mobile-menu li{
+    display: block;
+    height: 40px;
+    border-top: 2px solid;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.mobile-menu a{
+    width: 100%
+}
+
     /* fim do breakpoint 680px */
 }
 

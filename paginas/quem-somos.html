@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quem Somos</title>
     <link href="../css/style.css"" rel=" stylesheet" />
+    <link rel="stylesheet" href="../css/slider.css">
 </head>
 
 <body>
@@ -37,10 +38,13 @@
         </header>
         <!-- fim header -->
 
-        <!-- Início IMG Destaque -->
-        <div>
-            <img id=img-destaque src="../imagens/destaque-quem-somos.jpg" alt="">
-        </div>
+         <!-- Início IMG Destaque -->
+         <figure id="slide-show">
+            <img src="../imagens/destaque-home.jpg" alt="banner home page" title="banner home page">
+            <img src="../imagens/destaque-quem-somos.jpg" alt="banner quem somos" title="banner quem somos">
+            <img src="../imagens/destaque-servico.jpg" alt="banner serviços" title="banner serviços">
+            <img src="../imagens/destaque-contato.jpg" alt="banner contato" title="banner contato">
+        </figure>    
         <!-- FIM IMG Destaque -->
 
 
@@ -99,7 +103,9 @@
         </footer>
         <!-- fim do footer -->
     </div>
-
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/menu-mobile.js"></script>
 </body>
 
 </html>
