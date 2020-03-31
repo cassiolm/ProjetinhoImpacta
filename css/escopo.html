@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+</head>
+<body>
+    <script>
+        console.log('inicio Escopo');
+        // declaraçao de variaveis, com mesmo nome, mutavel
+        var nome = "Thiago";
+        console.log(nome);
+        var nome = 'Piancentini';
+        console(nome)
+
+        //declaracao let, nao permite chamar variavel let novamente, previne que nao utilize o mesmo nome no código
+        let carro = 'Ferrari';
+        console.log(carro);
+        let carro = 'Fusca';
+
+        //declaracao const, valor unico sempre.
+        // ex: senha de user, que nao deve mudar durante a execuçao de codigo
+
+        const senha = 'jarvis';
+        // const senha = 'novaSenha';
+        console.log(senha);
+
+    </script>
+</body>
+</html>
