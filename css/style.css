@@ -1,49 +1,46 @@
-/* primeiro comentário em css */
-
+/* primeiro comentario em css */
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-html {
-    margin: 18px;
+
+html{
+    font-size: 18px;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 0 auto;
     width: 100%;
-    /* por padrão o width do elemento é 100%, se não houver declaração */
+    /* por padra o width do elemento é 100%, se nao houver declaração */
 }
 
-/* .clear {} */
+.clear{
+    
+}
 
+/* div {
+    width: 95%;
+    margin: 0 auto;
+} */
 
-/* div{
-        width: 95%;
-        margin: 0 auto;
-    } */
-
-
-/* Tornando as img responsivas/flexíveis */
-
+/* tornando as img responsivas/flexiveis */
 img {
     max-width: 100%;
 }
 
-#img-logo {
+#img-logo{
     width: 100px;
-    margin-top:7px
+    margin-top: 7px;
 }
 
 #img-destaque{
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     height: 350px;
 }
@@ -51,6 +48,10 @@ img {
 header {
     position: relative;
     background: #ccc;
+}
+
+header h1{
+    margin: 0;
 }
 
 nav li {
@@ -72,11 +73,7 @@ nav {
     right: 100px;
 }
 
-
-/* nav a hover faz o foco no botão com mouse e o focus habilita para tab */
-
-nav a:hover,
-nav a:focus {
+nav a:hover, nav a:focus{
     background: #222;
     color: #fff;
     border-radius: 5px;
@@ -98,16 +95,14 @@ nav a:focus {
     height: 400px;
 }
 
-#tecnologias h2,
-aside h2,
-#quem-somos h2 {
+#tecnologias h2, aside h2, #quem-somos h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
     margin: 0 0 10px 0;
 }
 
-#tecnologias img {
+#tecnologias img{
     width: 100%;
 }
 
@@ -123,19 +118,12 @@ aside {
     background-image: linear-gradient(to top, #ccc, #fff);
 }
 
-aside img {
+aside img{
     width: 50%;
     margin-bottom: 10px;
 }
 
-aside article img {
-    width: 30%;
-    margin-bottom: 10px;
-}
-
-
-aside section,
-aside article {
+aside section, aside article{
     margin: 15px 0;
     padding: 1%;
     width: 30%;
@@ -144,9 +132,14 @@ aside article {
 
 aside h3 {
     text-transform: uppercase;
+    font-size: 30px;;
 }
 
-table {
+aside article img {
+    width: 30%;
+}
+
+table{
     text-transform: uppercase;
     border: solid 1px #222;
     margin: 15px auto;
@@ -160,79 +153,70 @@ td {
     width: 200px;
 }
 
-th {
+th{
     font-weight: bold;
     padding: 10px;
     text-align: center;
 }
-
-
-/* formatação das elementos ímpares com odd- e elemento pares com even */
-
-tr:nth-child(odd) {
-    background: #CCC;
+/* fortamação das linhas impares com odd 
+e elementos pares com even */
+tr:nth-child(odd){
+    background: #ccc;
 }
-
-tr:nth-child(even) {
+tr:nth-child(even){
     background: lightblue;
 }
-
-
 /* seleciona o primeiro elemento */
-
-tr:first-child {
+tr:first-child{
     color: #fff;
     background-color: #222;
 }
-
-
-/* seleciona o último elemento */
-
-tr:last-child {
+/*  seleciona o ultimo elemento */
+tr:last-child{
     background-color: khaki;
     text-decoration: underline;
 }
 
-.fadeOut{
+.fadeOut {
     opacity: 0;
-    transition: .5s;
-
+    transition: 0.5s;
 }
 
 .aprovado{
     color: green;
+    font-weight: bold;
 }
 
 .reprovado{
-    color:red;
-}
-/*
-tr:nth-child(2) td:nth-child(4) {
-    background-color: green;
+    color: red;
+    font-weight: bold;
 }
 
-tr:nth-child(3) td:nth-child(4) {
-    background-color: red;
+
+/*
+tr:nth-child(2) td:nth-child(4){
+    background: green;
 }
+tr:nth-child(3) td:nth-child(4){
+    background-color: red;
+} 
 */
 
-/* Preferencialmente usar flexbox em vez de float */
-
-.coluna-1 {
+.coluna-1{
     width: 50%;
     float: right;
 }
 
-.coluna-2 {
+.coluna-2{
     width: 50%;
     float: left;
 }
 
-footer {
+footer{
     clear: both;
 }
 
-#video-institucional {
+#video-institucional{
     clear: both;
     text-align: center;
     /* margin: 620px auto 0 auto; */
@@ -240,15 +224,15 @@ footer {
     margin: 0 auto;
 }
 
-#main-contato {
-    /* width: 680; */
+#main-contato{
+    /* width: 680px;     */
 }
 
 section h3{
     text-align: center;
 }
 
-form {
+form{
     margin-bottom: 100px;
 }
 
@@ -257,28 +241,24 @@ form {
     margin: 0 auto;
 }
 
-legend {
+legend{
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-input,
-textarea {
+input, textarea{
     width: 100%;
     margin: 0 0 10px 0;
     padding: 5px;
     border: #777 solid 1px;
 }
 
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-    border: #004891 solid 1px;
+input:hover, input:focus, textarea:hover, textarea:focus{
+    border: #004891 dashed 1px;
     background: #b9e3ff;
 }
 
-#enviar {
+#enviar{
     border: #004891 solid 1px;
     background: #0191ed;
     color: #fff;
@@ -286,32 +266,27 @@ textarea:focus {
     margin-top: 15px;
 }
 
-#enviar:hover {
-    border: #000 solid 1 px;
+#enviar:hover{
+    border: #000 solid 1px;
     transform: scale(1.02);
     box-shadow: 3px 3px 5px 5px #ccc;
 }
 
-input[type="number"] {
+input[type="number"]{
     background: lightcoral;
 }
-/* 
-input[type="number"] {
-    background: lightcoral;
-} */
 
-input::placeholder {
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #222;
-    opacity: .8;
+    opacity: .8; /* Firefox */
 }
-
-
-/* -webkit-::placeholder, -webkit-:placeholder,  ::placeholder, ::-ms-input-placeholder, :-ms-input-placeholder  {
+/*
+-webkit-::placeholder, -webkit-:placeholder,  ::placeholder, ::-ms-input-placeholder, :-ms-input-placeholder  {
     color: red;
     opacity: 1; 
-  } */
-
-footer {
+  }
+*/
+footer{
     background: #ccc;
 }
 
@@ -320,77 +295,87 @@ footer p {
     text-align: center;
 }
 
-address {
+address{
     margin: 10px 0 5px 40px;
 }
 
-.teste-seletor>p {
+.teste-seletor > p {
     color: red;
 }
 
-#mapa {
-    margin-top: 13px;
+#mapa{
+    margin-top: 12px;
 }
 
-@media screen and (max-width: 900px) {
-    main {
-        margin-top: 50px;
+@media screen and (max-width: 900px){
+    main{
+        margin-top: 50px ;
         margin-bottom: 50px;
         width: 98%;
     }
+
     nav {
         font-size: 20px;
     }
+
     nav a {
-        font-size: 1rem;
+        font-size: 1rem;       
     }
     #tecnologias article {
         height: 460px;
     }
+
     #tecnologias article p {
         font-size: .97em;
     }
-    #tecnologias article h2 {
+
+    #tecnologias article h2{
         font-size: 1.4em;
     }
-    aside section h3 {
+
+    aside section h3{
         font-size: 1.1em;
     }
+
     aside section img {
-        width: 50%
+        width: 48%;
     }
-    /* fim do breakpoint 900px */
-    .coluna-1,
-    .coluna-2 {
+
+    .coluna-1, .coluna-2{
         width: 46%;
         margin: 0 2%;
     }
-    .coluna-1 img,
-    .coluna-2 img {
+
+    .coluna-1 img, .coluna-2 img {
         height: 260px;
     }
-    footer address {
+
+    footer address{
         text-align: center;
         font-size: .8em;
     }
-    #mapa,
-    #form {
+
+    #mapa, #form{
         margin: 10px 0;
         width: 50%;
     }
-    section#form {
+
+    #mapa{
+        margin-top: 22px;
+
+    }
+
+    section#form{
         width: 50%;
     }
-    section#form form {
+    section#form form{
         width: 100%;
     }
-    /* fim do breakpoint 900px */
+/* fim do breakpoint 900px */
 }
 
-
 /* breakpoint para tela max de 680 */
-
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 680px){
     nav {
         top: 10px;
         right: 25px;
@@ -398,149 +383,176 @@ address {
     nav li {
         margin: 0 0 0 10px;
     }
-    #img-logo {
+
+    #img-logo{
         width: 75px;
     }
+
     section#tecnologias {
         margin: 0 auto;
         text-align: center;
     }
+
     #tecnologias article {
         margin: 0 auto;
     }
+
     #tecnologias p {
         text-align: left;
     }
+
     #quem-somos article {
-        widows: 90%;
+        width: 90%;
         margin: 0 auto;
     }
-    #quem-somos h2,
-    aside h2 {
+    #quem-somos h2, aside h2{
         font-size: 1em;
     }
-    #mapa,
-    #form {
+
+    #mapa, #form {
         float: none;
         width: 100%;
     }
-    section#form form {
+    section#form form{
         width: 200%;
     }
-    #video-institucional {
+
+    #video-institucional{
         width: 100%;
     }
 
-.mobile-btn{
-    display: block;
-    width: 36px;
-    height: 36px;
-    color: #fff;
-    border-top: 4px solid;
-    margin: -60px 20px 0 0; /* o top deve ser -70px*/
-    float: right; /* deve ir (flutuar) para direita*/
-    position: relative;
-    cursor: pointer;
-    -webkit-backface-visibility: hidden;
-}
-.mobile-btn::after, .mobile-btn::before{
-    content: '';
-    display: block;
-    height: 4px;
-    margin-top: 6px;
-    background: currentColor;
-    position: relative;
-    transition: transform .2s ease;
-}
-
-.mobile-btn.active{
-border-top-color:transparent;
-
-}
-
-.mobile-btn.active::after{
-    margin-top: 0;
-    top: 2px;
-    transform:rotate(45deg);
-}
-
-.mobile-btn.active::before{
-    margin-top: 0;
-    top: 6px;
-    transform:rotate(135deg);
-}
-
-/* menu quando sofrer click*/
-
-.mobile-menu{
-    position: fixed;
-    background: #ccc;
-    padding: 10px;
-    top: 50px;
-    right:0;
-    opacity: 0;
-    visibility: hidden;
-    /* translate 3d funciona horizontal, vert, profundidade */
-    transform: translate3d(60px, 0px, 0px);
-    transition: .3s;
-}
-
-.mobile-menu.active{
-    opacity: 1;
-    visibility: visible;
-    transform: translate3d(0px, 0px, 0px);
-}
-
-.mobile-menu li{
-    display: block;
-    height: 40px;
-    border-top: 2px solid;
-    text-align: center;
-    padding-top: 4px;
-}
-
-.mobile-menu a{
-    width: 100%
-}
-
-    /* fim do breakpoint 680px */
-}
-
-@media screen and (max-width: 400px) {
-    nav a {
-        font-size: .5555em;
+    /* add menu mobile */
+    .mobile-btn{
+        display: block;
+        width: 36px;
+        height: 36px;
+        color: white;
+        border-top: 4px solid;
+        margin: -70px 20px 0 0;
+        float: right;
+        position: relative;
+        cursor: pointer;
+        /* prevenir bug do crhome */
+        -webkit-backface-visibility: hidden;
     }
-    nav li {
-        margin: 0 0 0 2px;
+    
+    .mobile-btn::after, .mobile-btn::before{
+        content: '';
+        display: block;
+        height: 4px;
+        margin-top: 6px;
+        background: currentColor;
+        position: relative;
+        transition: transform .2s ease;
+    }
+    
+    /* retira a primeira barra as demais formam X*/
+    .mobile-btn.active {
+        border-top-color: transparent;
+    }
+    
+    .mobile-btn.active::after{
+        margin-top: 0;
+        top: 2px;
+        transform: rotate(45deg);
+    }
+    .mobile-btn.active::before{
+        margin-top: 0;
+        top: 6px;
+        transform: rotate(135deg);
+    }
+    
+    .mobile-menu{
+        position: fixed;
+        background: #ccc;
+        padding: 10px;
+        top: 50px;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        /* horizontal, vertical, profundidade */
+        transform: translate3d(60px, 0px, 0px);
+        transition: .3s;
+    }
+    
+    .mobile-menu.active{
+        opacity: 1;
+        visibility: visible;
+        /* horizontal, vertical, profundidade */
+        transform: translate3d(0px, 0px, 0px);
+    }
+    
+    .mobile-menu li {
+        display: block;
+        height: 40px;
+        border-top: 2px solid;
+        text-align: center;
+        padding-top: 4px;
+    }
+    
+    .mobile-menu li a{
+        width: 100%;
+    }
+
+/* fim do breakpoint 680px */
+}
+
+@media screen and (max-width: 400px){
+    nav a {
+        font-size: .6em;
+        margin: 0 0 0 1px;
     }
     #tecnologias article {
         width: 100%;
         height: 360px;
     }
+
     #tecnologias article p {
         font-size: .9em;
     }
+
     #tecnologias img {
         width: 90%;
     }
-    aside section,
-    aside article {
+
+    aside section, aside article{
         width: 100%;
     }
+
     aside section img {
         width: 30%;
     }
+
     table {
-        width: 90%
+        width: 90%;
     }
     h3 {
         text-align: center;
     }
-    .coluna-1,
-    .coluna-2 {
+    .coluna-1, .coluna-2{
         float: none;
         width: 95%;
         margin: 0 auto;
     }
-    /* fim do breakpoint 400px */
+
+
+
+/* fim do breakpoint 400px */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

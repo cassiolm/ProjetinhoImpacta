@@ -1,18 +1,17 @@
-
-//acessa o h3
+// acessa o h3
 var titulo = document.querySelector('h3');
-// troca o titulo do h3 ˆ
+// troca o titulo do h3 ^
 titulo.textContent = 'Lista de Alunos';
 
 var botaoAdicionaAluno = document.querySelector('#adicionar-aluno');
-
-botaoAdicionaAluno.addEventListener('click', function(){
-    // previne o comportamento padrão que é recarregar a página
+botaoAdicionaAluno.addEventListener('click', function () {
+    // previne o comportamento padrao
     event.preventDefault();
-    //acessando o form
-    var form = document.querySelector('#form-adiciona');
 
-    // para acessar o valor do input, utilizamos o value
+    // acessando o form
+    var form = document.querySelector("#form-adiciona");
+
+    // acesso ao input e o valor passado pelo user
     var nome = form.nome.value;
     var curso = form.curso.value;
     var nota = form.nota.value;
@@ -20,73 +19,62 @@ botaoAdicionaAluno.addEventListener('click', function(){
 
     // criar elemento tr
     var alunoTr = document.createElement('tr');
-
-    //criando tds
+ 
+    // criando tds 
     var nomeTd = document.createElement('td'),
-    cursoTd = document.createElement('td'),
-    notaTd = document.createElement('td'),
-    statusTd = document.createElement('td');    
+        cursoTd = document.createElement('td'),
+        notaTd = document.createElement('td'),
+        statusTd = document.createElement('td');
 
-    // inserindo o value do input na td
+    // inserindo o value do input na td 
     nomeTd.textContent = nome;
     cursoTd.textContent = curso;
     notaTd.textContent = nota;
-    statusTd.textContent =  status;
+    statusTd.textContent = status;
 
-    // montar a tr e add como elemento filho
 
+    // monstar a tr e add td como elemento filho
     alunoTr.appendChild(nomeTd);
     alunoTr.appendChild(cursoTd);
     alunoTr.appendChild(notaTd);
     alunoTr.appendChild(statusTd);
-    
-    console.log(alunoTr);
 
-    // acesso a tabela
+    // acessao a tabela 
     var tabela = document.querySelector('#tabela-aluno');
-    
-    //add tr completo na tabela
+    // add o tr complleto na tabela
     tabela.appendChild(alunoTr);
 
-    if ( nota >= 6) {
+    if (nota >= 6) {
         notaTd.classList.add('aprovado');
     } else {
         notaTd.classList.add('reprovado');
     }
 
-    if (status =='ativo'){
+    if ( status == 'ativo') {
         statusTd.classList.add('aprovado');
-    } else if(status =='inativo'){
+    } else if (status == 'inativo') {
         statusTd.classList.add('reprovado');
-    }else{
+    } else {
         statusTd.textContent = 'Não definido';
         statusTd.classList.add('reprovado');
     }
 
-    // adicionar o combobox / input radio para a verificaçao do status
+    // adcionar o combobox / input radio para a verificação do status
     form.reset();
-
-    nomeTd.setAttribute('required')
-    cursoTd.setAttribute('required')
-    notaTd.setAttribute('required')
-    statusTd.setAttribute('required')
-
-    // console.log(removeAluno);
-    // console.log(nomeTd);
-    // console.log(nome);
-
-    console.log("ao click");
 });
+console.log('Link externo');
 
-console.log('teste fim');
 
+// função que remove elemento com dblclick
 var removeAluno = document.querySelector('table');
-removeAluno.addEventListener('dblclick', function(e){
+removeAluno.addEventListener('dblclick', function (e) {
     console.log(e.target);
-    //parentNode / Nó pai
-    e.target.parentNode.classList.add('fadeOut');   
-    //remover com um callback
-    setTimeout(function(){
+    // parentNode / noPai
+    e.target.parentNode.classList.add('fadeOut');
+    // remover com um callback 
+    setTimeout(function () {
         e.target.parentNode.remove();
     }, 500);
 });
+
+console.log(removeAluno);

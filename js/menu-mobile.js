@@ -1,4 +1,8 @@
-$(".mobile-btn").click(function(){
+
+$('.mobile-btn').click(function(){
+    // btn burger > x
     $(this).toggleClass('active');
-    $('mobile menu').toggleClass('active');
+    // faz aparecer o menu mobile lateral
+
+    $('.mobile-menu').toggleClass('active');
 });
