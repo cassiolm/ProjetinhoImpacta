@@ -1,0 +1,58 @@
+[
+    {
+        "ra": 85,
+        "nome": "Shawna",
+        "curso": "ads",
+        "nota": "6",
+        "status": "ativo"
+    },
+    {
+        "ra": 86,
+        "nome": "Castro Lowery",
+        "curso": "bd",
+        "nota": "8",
+        "status": "inativo"
+    },
+    {
+        "ra": 150,
+        "nome": "Ana Mooney",
+        "curso": "si",
+        "nota": "9",
+        "status": "ativo"
+    },
+    {
+        "ra": 75,
+        "nome": "Simmons Christian",
+        "curso": "adm",
+        "nota": "7",
+        "status": "ativo"
+    },
+    {
+        "ra": 4,
+        "nome": "Haley Miranda",
+        "curso": "design",
+        "nota": "9",
+        "status": "inativo"
+    },
+    {
+        "ra": 66,
+        "nome": "Christie Wolfe",
+        "curso": "ads",
+        "nota": "4",
+        "status": "inativo"
+    },
+    {
+        "ra": 26,
+        "nome": "Hill Nolan",
+        "curso": "si",
+        "nota": "6",
+        "status": "inativo"
+    },
+    {
+        "ra": 17,
+        "nome": "Long Case",
+        "curso": "si",
+        "nota": "5",
+        "status": "ativo"
+    }
+]

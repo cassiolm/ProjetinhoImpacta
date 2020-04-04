@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento Local</title>
+</head>
+<body>
+    <div>
+        <h1>Armazenamento com localStorage</h1>
+        <h2>Olá, <span></span></h2>
+        <form>
+            <label for="nome">nome</label><input type="text" id="nome" name="nome">
+            <br>
+
+            <label for="cor">Escolha uma cor para o Background</label>
+            <input type="color" id="cor" name="cor">
+            <br>
+            <button id="salvar" type="submit">Salvar</button>
+            <button id='limpar' type="reset">Limpar</button>
+
+
+        </form>
+    </div>
+    <hr>
+    <h2>
+        armazenamento em session storage
+    </h2>
+    <button onclick="contadordeClick()" type="button">Click</button>
+    <hr>
+    <div id= 'resultado'></div>
+<p>iniciando contador de clicks</p>
+ 
+
+    <script src="../js/local-storage.js"></script>
+    <script src="../js/session-storage.js"></script>
+</body>
+</html>

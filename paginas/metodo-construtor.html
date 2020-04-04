@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo construtor</title>
+</head>
+
+<body>
+    <p id='pf'></p>
+    <p id='pj'></p>
+
+    <script>
+
+        function Conta(agencia, conta, titular, saldo) {
+            this.nAgencia = agencia;
+            this.nConta = conta;
+            this.titular = titular;
+            this.saldo = saldo;
+        }
+        Conta.prototype.cliente = function () {
+            return "AG: " + this.nAgencia + "<br> Conta: " + this.nConta + "<br> Titular:  " + this.titular
+        }
+
+        var contaPf = new Conta("0012", '0012-50', 'Thiago Piancentini', '99');
+        var contaPj = new Conta("2012", '0015-60', 'Impacta', '999');
+
+        document.getElementById('pf').innerHTML = 'Cliente: ' + contaPf.cliente();
+        document.getElementById('pj').innerHTML = 'Cliente: ' + ContaPj.cliente();
+        
+    </script>
+
+</body>
+
+</html>

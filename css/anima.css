@@ -1,0 +1,41 @@
+.animate{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* left: 40px; */
+    /* top: 100px; */
+    animation: ovni 10s infinite linear;
+    opacity: 0;
+}
+
+@keyframes ovni {
+    0% {
+      left: 0%;
+      top: 0%;
+      opacity: 0.5;
+    }
+  
+    25% {
+      left: 90%;
+      top: 20%;
+      opacity: 0.5;
+    }
+  
+    50% {
+      left: 90%;
+      top: 55%;
+      opacity: 0;
+    }
+  
+    75% {
+      left: 35%;
+      top: 35%;
+      opacity: 0;
+    }
+  
+    100% {
+      left: 0%;
+      top: 0%;
+      opacity: 1;
+    }
+}
